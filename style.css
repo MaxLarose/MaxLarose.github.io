@@ -147,7 +147,7 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
-    
+    border-radius: 5px;
 }
 .hero-btn:hover{
     border: 1px solid #6688cf;
@@ -355,12 +355,12 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
     color: #000;
 }
 
 .synopsis h2{
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -382,9 +382,8 @@ h2{
 }
 
 .row{
-    margin-top: 5%;
     justify-content: space-between;
-    display:inline-flex;
+    display:block;
 }
 
 .row-index{
@@ -394,7 +393,6 @@ h2{
 }
 
 .row-thesis{
-    margin-top: 5%;
     justify-content: space-between;
 }
 
@@ -421,7 +419,11 @@ h2{
     font-size: 32px;
 }
 
-
+.PIP{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 @media(max-width: 700px){
     .pip-img{
         width: 100%;
@@ -431,9 +433,9 @@ h2{
     }
     
     .PIP{
-        width: 80%;
+        width: 100%;
         margin: auto;
-        padding-top: 80px;
+        padding-top: 30px;
         padding-bottom: 50px;
     }
     
@@ -441,7 +443,7 @@ h2{
         width: 80%;
         height: auto;
         margin: auto;
-        padding-top: 10px;
+        padding-top: 40px;
         padding-bottom: 10px;
     }
     .row{
@@ -481,23 +483,6 @@ h2{
     }
 }
 
-
-
-.gingerbread{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.gingerbread-col{
-    text-align: center;
-}
-.gingerbread-col img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
 
 /*-----------footer----------*/
 
@@ -569,7 +554,7 @@ h2{
 }
 
 .sub-header-about h1{
-    font-size: 62px;
+    font-size: 50px;
 }
 .sub-header h1{
     font-size: 30px;
@@ -583,13 +568,13 @@ h2{
 .about-me{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
 .about-col{
     flex-basis: 48%;
-    padding: 30px 2px;
+    padding: 30px 20px;
 }
 
 
@@ -650,12 +635,13 @@ h2{
 }
 
 .sub-header-contact h1{
-    font-size: 62px;
+    font-size: 50px;
 }
 
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
+    margin-top: 5%;
 }
 
 .contact-col div{
@@ -668,7 +654,6 @@ h2{
 .contact-col div .fa{
     font-size: 38px;
     color: #1147b5;
-    margin: 10px;
     margin-right: 30px;
 }
 
@@ -724,7 +709,12 @@ h2{
     }
 }
 
-
+.contact-form{
+    border-radius: 5px;
+background: #ffffff;
+box-shadow: inset 7px 7px 12px #e3e3e3,
+            inset -7px -7px 12px #ffffff;
+}
 
 /*----------------------------------------------------My Thesis-----------------------------------------*/
 
@@ -759,7 +749,6 @@ h2{
 }
 @media(max-width: 700px){
     .thesis-pdf{
-        height: 60vh;
         display: none;
     }
 }
@@ -780,6 +769,7 @@ h2{
     background: transparent;
     position: relative;
     cursor: pointer;
+    border-radius: 5px;
 }
 @media(min-width: 701px){
     .thesis-btn{
@@ -831,7 +821,6 @@ h2{
     .PIP-col{
         padding-top: 30px;
         padding-left: 4vw;
-        width: 65%;
         flex-basis: 48%;
         text-align: left;
     }
@@ -888,20 +877,34 @@ h2{
     color: #fff;
 }
 
+
 @media(max-width: 700px){
     .sub-header-teaching{
         background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Teaching-BG-1-mobile.png);
     }
 }
 
-.row-teaching{
-    padding-top: 40px
+
+.table{
+    border-collapse: collapse;
+    justify-content: center;
+    margin-left: 5%;
 }
 
 .teaching-table th{
     font-size: 20px;
     padding: 10px 20px;
     text-align: left;
+    background-color: #6688cf;
+    color: #fff;
+}
+
+.top-left-table{
+    border-top-left-radius: 30px
+}
+
+.top-right-table{
+    border-top-right-radius: 30px
 }
 
 .teaching-table td{
@@ -914,14 +917,98 @@ h2{
 }
 
 
+@media(min-width: 701px){
+    
+    .row-teaching{
+        display: block;
+        justify-content: center;
+        align-items: center;
+}
+    
+    .teaching-col{
+        padding-top: 30px;
+        flex-basis: 48%;
+        text-align: left;
+    }
+    .teaching-col p, .teaching-col h{
+        padding-left: 0;
+    }
+
+    .row-teaching{
+        align-content: left;
+        text-align: left;
+        margin: 5% 5%;
+    }
+}    
+
+.teaching{
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.row-teaching{
+    width: 80%;
+    margin: auto;
+    align-content: center;
+}
+
+.teaching-col, .teaching-table {
+    width: 100%;
+    text-align: left;
+    padding-left: 0px;
+    width 100%;
+}
 
 
 
+@media(max-width: 700px){
+    .row-teaching{
+        margin: 5% 5%;
+        justify-content: space-between;
+        display:inline-flex;
+        display: block;
+    }
+    .teaching-col{
+        flex-basis: 48%;
+    }
+    
+  
+    .teaching-col,
+    .teaching-table {
+        padding: 0;
+    }
+    .teaching-col p, .teaching-col h1{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .teaching-table{
+        white-space: nowrap;
+    }
+    .teaching-table-container{
+        width: 95vw;
+        overflow-x: auto;
+    }
+}
 
+.teaching-table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/
+.pip,
+.about-col,
+.teaching-col {
+    padding: 5%; /* Adjust the value as needed */
+    margin-top: 5%; /* Adjust the value as needed */
+    margin: auto;
+}
 
-
-
+.row-pip{
+    padding-left: 30px
+}
 
 
 

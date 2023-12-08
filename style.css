@@ -397,12 +397,13 @@ nav .fa{
 /*---------Synopsis------------*/
 
 .synopsis{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 40px;
     color: #000;
 }
+
 
 .synopsis h2{
     padding-top: 0px;
@@ -432,7 +433,7 @@ h2{
 }
 
 .row-index{
-    margin-top: 5%;
+    margin: 5% 5%;
     justify-content: space-between;
     display:inline-flex;
 }
@@ -460,6 +461,7 @@ h2{
     margin-left: -20px;
 }
 
+.synopsis
 .synopsis-col h3{
     font-size: 32px;
 }

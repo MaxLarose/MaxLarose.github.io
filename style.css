@@ -524,14 +524,14 @@ h2{
     }
 }
 
-@media(max-width: 700px){
-    .synopsis-col{
+
+.synopsis-col{
     box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.6);
-    }
-    .synopsis-col:hover{
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.9);
-    }
 }
+.synopsis-col:hover{
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);
+}
+
 
 
 /*-----------footer----------*/
@@ -870,9 +870,7 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     text-align: center;
     color: #fff;
 }
-.sub-header-PIP h1{
-    padding-left: 10px;
-    padding-right: 10px;
+
 }
 @media(max-width: 700px){
     .sub-header-PIP{
@@ -1070,15 +1068,53 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     align-items: center;
 }
 
-/*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/
-.pip,
-.about-col{
-    padding: 5%; /* Adjust the value as needed */
-    margin-top: 5%; /* Adjust the value as needed */
+
+
+
+/*-------------------------------------------------------Blog-------------------------------------------------------*/
+
+.blog{
+    width: 90%;
     margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    grid-auto-rows: auto;
+    grid-gap: 4rem;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/
 
 
 

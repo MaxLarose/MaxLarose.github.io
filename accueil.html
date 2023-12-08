@@ -17,24 +17,24 @@
     
 <section class="header">
     <nav>
-        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <a href="accueil.html" class="To-Home">Maxime<br>Larose</a>
         <div class="nav-links" id=navLinks>
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
-                <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
-                <li><a href="accueil.html">FR</a></li>
+                <li><a href="accueil.html"><i class="fa-solid fa-house"></i>&nbsp; ACCUEIL</a></li>
+                <li><a href="about-fr.html"><i class="fa-solid fa-address-card"></i>&nbsp; À PROPOS DE MOI</a></li>
+                <li><a href="contact-fr.html"><i class="fa-solid fa-envelope"></i>&nbsp; ME CONTACTER</a></li>
+                <li><a href="index.html">EN</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
     
-<div class="text-box">
-    <h1>Hi, I'm Max!</h1>
-    <p>I bring the unique skills and experience of a mathematics background to the world of software development.</p>
-    <a href="files/Resume%20Maxime%20Deschenes-Larose.pdf" class="hero-btn" target="_blank">My Resume</a>
+<div class="text-box-fr">
+    <h1>Salut, moi c'est Max!</h1>
+    <p>J'apporte au domaine du développement de logiciels les compétences et l'expérience uniques d'une éducation en mathématiques.</p>
+    <a href="files/Resume%20Maxime%20Deschenes-Larose.pdf" class="hero-btn" target="_blank">Mon CV</a>
 </div>
     
 <!-----------------------------------Squares in Background--------------------------------    -->
@@ -63,22 +63,22 @@
 
 <!--  ----synopsis------>
 <section class="synopsis">
-    <h1>I solve complex problems through software development!</h1>
-    <p>I'm a mathematics graduate with a Master's degree in Mathematics and Statistics. With a Magna Cum Laude Bachelor's degree and teaching experience, my solid foundation in advanced mathematics is complemented by my proficiency in Python, R, LaTeX, SQL, Visual Basic, C, MATLAB, HTML, and CSS. My mathematical background uniquely positions me with excellent problem-solving skills for software development roles. Let's explore how I can contribute to your team's success.</p>
+    <h1>Je résous des problèmes complexes au moyen du développement de logiciels!</h1>
+    <p>Je suis titulaire d'une maîtrise en Mathématiques et Statistique. Avec un baccalauréat avec mention Magna Cum Laude et de l'expérience en enseignement, ma solide base en mathématiques avancées est complétée par mes compétences en Python, R, LaTeX, SQL, Visual Basic, C, MATLAB, HTML, et CSS. Ma formation en mathématiques me positionne de façon idéale avec d'excellentes compétences en résolution de problèmes qui font de moi un excellent candidat pour les rôles en développement de logiciels.</p>
     
-    <h2>Here are a few of my recent projects.</h2>
+    <h2>Voici quelques-un de mes projets récents.</h2>
     <div class="row-index">
-        <a href="Thesis.html" class="synopsis-col">
-            <h3>My master's thesis</h3>
-            <p>In my thesis, "Embedding r-Factorizations of Complete Uniform Hypergraphs into s-Factorizations," I make significant advancements in a combinatorics problem through theoretical means and through software development.</p>
+        <a href="Thèse.html" class="synopsis-col">
+            <h3>Ma thèse de maîtrise</h3>
+            <p>Dans ma thèse, "Embedding r-Factorizations of Complete Uniform Hypergraphs into s-Factorizations," je fais des progrès significatifs dans un problème de combinatoire par des moyens théoriques et par le développement de logiciels.</p>
         </a>
-        <a href="Teaching.html" class="synopsis-col">
-            <h3>My teaching</h3>
-            <p>As an active member of the academic community, I've had the privilege of contributing to the academic journey of undergraduate students by providing invaluable support and fostering engaging learning environments, all while upholding the highest standards of educational excellence.</p>
+        <a href="enseignement.html" class="synopsis-col">
+            <h3>Mon enseignement</h3>
+            <p>En tant que membre actif de la communauté académique, j'ai eu le privilège de contribuer au parcours académique des étudiants de premier cycle en fournissant de précieux conseils et en encourageant un environnement d'apprentissage stimulant, tout en tenant à coeur le plus haut standard d'excellence académique.</p>
         </a>
-        <a href="PIP.html" class="synopsis-col">
+        <a href="PIP-fr.html" class="synopsis-col">
             <h3>PIP</h3>
-            <p>Named after the main character of Charles Dickens' Geat Expectations, PIP is a social cryptocurrency token created for the Solana blockchain. PIP was created as a means to familiarize myself with Solana's proprietary programming language.</p>
+            <p>PIP, qui doit son nom au personnage principal du roman Great Expectations de Charles Dickens, est un jeton de crypto-monnaie sociale que j'ai créé pour la blockchain Solana. PIP a été créé pour me familiariser avec le langage de programmation propriétaire de Solana.</p>
         </a>
     </div>
     
@@ -90,7 +90,7 @@
     
     
 <section class="footer">
-    <p>Designed and built by Maxime Larose</p>
+    <p>Conçu et construit par Maxime Larose</p>
 </section>
     
 
@@ -140,38 +140,6 @@
 
 </script>
     
-    
-    
-    
-<script>
-    // Define translations
-    const translations = {
-      en: {
-        greeting: 'Hello',
-        description: 'This is a sample website.',
-        paragraph1: 'This is the first additional paragraph.',
-        paragraph2: 'This is the second additional paragraph.'
-      },
-      es: {
-        greeting: 'Hola',
-        description: 'Este es un sitio web de muestra.',
-        paragraph1: 'Este es el primer párrafo adicional.',
-        paragraph2: 'Este es el segundo párrafo adicional.'
-      }
-    };
-
-    // Function to change language
-    function changeLanguage(lang) {
-      // Get all elements with data-translate attribute
-      const elements = document.querySelectorAll('[data-translate]');
-
-      // Replace content with translations
-      elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        element.textContent = translations[lang][key];
-      });
-    }
-    </script>
 </body>
 </html>
 

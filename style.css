@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-}
+}F
 body{
     overflow-x: hidden;
     background-color: #fff;
@@ -110,6 +110,16 @@ nav img{
     text-align: center;
     z-index: 2;
 }
+.text-box-fr{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
 
 .text-box h1{
     display: inline-block;
@@ -128,15 +138,44 @@ nav img{
     typing .99s steps(12, end),
     blink-caret .95s step-end infinite;
 }
+.text-box-fr h1{
+    display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #000; /* Adjust the color of the cursor */
+            margin: 0;
+            padding: 0px;
+            animation: typewriter 2s steps(5) infinite;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .02em; /* Adjust as needed */
+  animation: 
+    typing-fr .99s steps(12, end),
+    blink-caret .95s step-end infinite;
+}
 
 .text-box h1{
     font-size: 62px;
 }
+
+.text-box-fr h1{
+    font-size: 62px;
+}
+
 .text-box p{
     margin: 10px 0 40px;
     font-size: 30px;
     color: #fff;
 }
+
+.text-box-fr p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
@@ -165,7 +204,13 @@ nav .fa{
     .text-box h1{
         font-size: 30px;
     }
+    .text-box-fr h1{
+        font-size: 30px;
+    }
     .text-box p{
+        font-size: 20px;
+    }
+    .text-box-fr p{
         font-size: 20px;
     }
     .nav-links ul li{
@@ -520,6 +565,20 @@ h2{
 }
 }
 
+@media(min-width: 701px){
+    @keyframes typing-fr {
+  from { width: 0 }
+  to { width: 620px }
+}
+}
+
+@media(max-width: 700px){
+    @keyframes typing-fr {
+  from { width: 0 }
+  to { width: 310px }
+}
+}
+
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
@@ -786,13 +845,20 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 /*------------------------------------------------------PIP--------------------------------------------------*/
 
 .sub-header-PIP{
+    background-attachment: fixed;
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/Frutiger-banner.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Crypto-BG-1.png);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
+}
+
+@media(max-width: 700px){
+    .sub-header-PIP{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Crypto-BG-1-mobile.png);  
+    }
 }
 
 .row-pip{

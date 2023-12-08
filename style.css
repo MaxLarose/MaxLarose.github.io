@@ -123,35 +123,35 @@ nav img{
 
 .text-box h1{
     display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 2px solid #000; /* Adjust the color of the cursor */
-            margin: 0;
-            padding: 0px;
-            animation: typewriter 2s steps(5) infinite;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .02em; /* Adjust as needed */
-  animation: 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000; /* Adjust the color of the cursor */
+    margin: 0;
+    padding: 0px;
+    animation: typewriter 2s steps(5) infinite;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .02em; /* Adjust as needed */
+    animation: 
     typing .99s steps(12, end),
     blink-caret .95s step-end infinite;
 }
 .text-box-fr h1{
     display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
-            border-right: 2px solid #000; /* Adjust the color of the cursor */
-            margin: 0;
-            padding: 0px;
-            animation: typewriter 2s steps(5) infinite;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .02em; /* Adjust as needed */
-  animation: 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000; /* Adjust the color of the cursor */
+    margin: 0;
+    padding: 0px;
+    animation: typewriter 2s steps(5) infinite;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .02em; /* Adjust as needed */
+    animation: 
     typing-fr .99s steps(12, end),
     blink-caret .95s step-end infinite;
 }
@@ -187,6 +187,7 @@ nav img{
     position: relative;
     cursor: pointer;
     border-radius: 5px;
+    
 }
 .hero-btn:hover{
     border: 1px solid #6688cf;
@@ -253,6 +254,7 @@ nav .fa{
 }
 
 /*----------------------------------------------------Background animation effect-----------------------------------------------*/
+
 
 
 .h{
@@ -439,10 +441,6 @@ h2{
     display:inline-flex;
 }
 
-.row-thesis{
-    justify-content: space-between;
-}
-
 
 
 .synopsis-col{
@@ -469,7 +467,7 @@ h2{
 
 .PIP{
         width: 100%;
-        padding-top: 30px;
+        padding-top: 0px;
         padding-bottom: 50px;
     }
 @media(max-width: 700px){
@@ -483,7 +481,6 @@ h2{
     .PIP{
         width: 100%;
         margin: auto;
-        padding-top: 30px;
         padding-bottom: 50px;
     }
     
@@ -507,12 +504,17 @@ h2{
     .row-pip{
         margin-top: 5%;
         justify-content: space-between;
-        display:inline-flex;
         display: block;
+        align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .PIP-col{
         flex-basis: 48%;
-        padding: 30px 2px;
+        padding: 30px 0px;
+    }
+    .PIP-col h1{
+        padding-left: 10px
     }
 }
 
@@ -608,6 +610,10 @@ h2{
     text-align: center;
     color: #fff;
 }
+.sub-header-about h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 @media(max-width: 700px){
     .sub-header-about{
@@ -698,6 +704,8 @@ h2{
 
 .sub-header-contact h1{
     font-size: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .contact-col{
@@ -797,7 +805,10 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     text-align: center;
     color: #fff;
 }
-
+.sub-header-thesis h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 @media(max-width: 700px){
     .sub-header-thesis{
         background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Thesis-BG-6-mobile.png);
@@ -819,6 +830,8 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 .about-title{
     font-size: 50px;
 }
+
+
 
 .thesis-btn{
     margin-top: 14px;
@@ -857,16 +870,17 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     text-align: center;
     color: #fff;
 }
-
+.sub-header-PIP h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 @media(max-width: 700px){
     .sub-header-PIP{
         background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Crypto-BG-1-mobile.png);  
     }
 }
 
-.row-pip{
-        align-content: center;
-    }
+
 
 
 @keyframes wipe-enter {
@@ -885,51 +899,39 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
         display: flex;
         justify-content: center;
         align-items: center;
+        align-content: center;
 }
     
     .PIP-col{
         padding-top: 30px;
-        padding-left: 4vw;
         flex-basis: 48%;
         text-align: left;
     }
-    .PIP-col p{
-        padding-left: 0
-    }
-
-    .row-pip{
-        display:flex;
-        align-content: center;
-        text-align: center;
-    }
 
     .pip-img{
-        width: 60%;
         height: auto;
         margin-top: 30px;
         align-items: center;
         animation: wipe-enter 1s 0;
-
-
-    }
-    
-
-    .PIP-col-img{
         width: 35%;
-}    
+    } 
 }
 .roll-animation{
     animation: wipe-enter 1s 1;
 }
 } 
-.PIP-col p{
-        padding-left: 0;
-    }
+
 
 
 @media(max-width: 700px){
     .sub-header-PIP h1.about-title {
         font-size: 50px; /* Adjust the font size as needed */
+        padding-top: 10px;
+    }
+}
+@media(max-width: 350px){
+    h1.about-title {
+        font-size: 35px; /* Adjust the font size as needed */
         padding-top: 10px;
     }
 }
@@ -944,8 +946,12 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     background-size: cover;
     text-align: center;
     color: #fff;
+    
 }
-
+.sub-header-teaching h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 @media(max-width: 700px){
     .sub-header-teaching{
@@ -987,23 +993,17 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 
 
 @media(min-width: 701px){
-    
-    .row-teaching{
-        display: block;
-        justify-content: center;
-        align-items: center;
-}
-    
     .teaching-col{
         padding-top: 30px;
         flex-basis: 48%;
         text-align: left;
     }
-    .teaching-col p, .teaching-col h{
-        padding-left: 0;
-    }
+    
 
     .row-teaching{
+        display: block;
+        justify-content: center;
+        align-items: center;
         align-content: left;
         text-align: left;
         margin: 5% 5%;
@@ -1013,16 +1013,12 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 .teaching{
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 0px 0;
 }
 
-.row-teaching{
-    width: 80%;
-    margin: auto;
-    align-content: center;
-}
 
-.teaching-col, .teaching-table {
+
+.teaching-table {
     width: 100%;
     text-align: left;
     padding-left: 0px;
@@ -1033,17 +1029,22 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 
 @media(max-width: 700px){
     .row-teaching{
-        margin: 5% 5%;
+        margin-top: 5%;
         justify-content: space-between;
-        display:inline-flex;
         display: block;
+        align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .teaching-col{
         flex-basis: 48%;
+        padding: 30px 1px;
+    }
+    .teaching-col h1{
+        padding-left: 10px
     }
     
   
-    .teaching-col,
     .teaching-table {
         padding: 0;
     }
@@ -1068,16 +1069,12 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 
 /*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/
 .pip,
-.about-col,
-.teaching-col {
+.about-col{
     padding: 5%; /* Adjust the value as needed */
     margin-top: 5%; /* Adjust the value as needed */
     margin: auto;
 }
 
-.row-pip{
-    padding-left: 30px
-}
 
 
 

@@ -24,7 +24,8 @@
                 <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
                 <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
                 <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
-                <li><a href="accueil.html">FR</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_sept_ponts_de_konigsberg.html">FR</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -143,35 +144,7 @@
     
     
     
-<script>
-    // Define translations
-    const translations = {
-      en: {
-        greeting: 'Hello',
-        description: 'This is a sample website.',
-        paragraph1: 'This is the first additional paragraph.',
-        paragraph2: 'This is the second additional paragraph.'
-      },
-      es: {
-        greeting: 'Hola',
-        description: 'Este es un sitio web de muestra.',
-        paragraph1: 'Este es el primer párrafo adicional.',
-        paragraph2: 'Este es el segundo párrafo adicional.'
-      }
-    };
 
-    // Function to change language
-    function changeLanguage(lang) {
-      // Get all elements with data-translate attribute
-      const elements = document.querySelectorAll('[data-translate]');
-
-      // Replace content with translations
-      elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        element.textContent = translations[lang][key];
-      });
-    }
-    </script>
 </body>
 </html>
 

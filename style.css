@@ -1073,41 +1073,277 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 
 /*-------------------------------------------------------Blog-------------------------------------------------------*/
 
-.blog{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding-top: 40px;
-    color: #000;
+@gray-darker:               #444444;
+@gray-dark:                 #696969;
+@gray:                      #999999;
+@gray-light:                #cccccc;
+@gray-lighter:              #ececec;
+@gray-lightest:             lighten(@gray-lighter,4%);
+
+*,
+*::before,
+*::after { 
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid @gray-light;
+    //border-radius: 1rem;
+    color: @gray-dark;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+ 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-content: center;
     display: grid;
-    grid-template-columns: repeat(2, fr);
-    grid-auto-rows: auto;
-    grid-gap: 4rem;
+    place-items: center;
+}
+
+.cards__item {
+    display: grid;
+    width: 95%;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-left: 1.6666%;
+    
+    margin-right: 1.6666%;
+}
+
+.cards__item:visited{
+    color: white;
+}
+
+@media(min-width: 701px){
+    .cards__item:hover{
+        top: -100px;
+        color: black;
+    }
+}
+
+
+.cards__item{
+    box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+    
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.cards__item:hover{
+    box-shadow: 0px 20px 30px 10px rgba(0,0,0,0.4);
+    transform: translateY(-10px);
+}
+
+.card {
+    background-color: #071c37;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    
+
+}
+
+.card__image {
+    height: 40vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(100%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+    &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+    }
+    @media(min-width: 40rem) {
+    &::before {
+      padding-top: 66.6%;
+    }
+    }
+}
+
+
+.card__image--bridges {
+  background-image: url(images/Konigsberg_bridges.png);
+}
+.card__image--straws {
+  background-image: url(images/straw.jpg);
+}
+
+.card__title {
+  color: @gray-dark;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  flex: 1 1 auto;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+
+
+.sub-header-blog_seven_bridges_of_konigsberg{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/Konigsberg_bridges.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header-blog_straw h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header-blog_straw{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0.8)),url(images/straw.jpg);
+    }
+}
+
+.sub-header-blog_straw{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header-blog_seven_bridges_of_konigsberg h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header-blog_seven_bridges_of_konigsberg{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0.8)),url(images/straw.jpg);
+    }
+}
+
+.blog-konigsberg-img1 {
+    text-align: center;
+}
+
+
+.sub-header-blog_straws{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header-straws h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header-blog_straws{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0.8)),url(images/straw.jpg);
+    }
+}
+
+.blog-konigsberg-img1 {
+    text-align: center;
 }
 
 
 
 
+@media(max-width: 700px){
+    .blog h1{
+        font-size: 50px;
+        padding-top: 50px
+    }
+}
 
 
 
 
+@media(max-width: 700px){
+    .sub-header-blog h1{
+        font-size: 50px;
+        padding-top: 50px
+    }
+}
 
+.sub-header-blog{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Blog-BG-1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header-blog h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+@media(max-width: 700px){
+    .sub-header-blog{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Blog-BG-1-mobile.png);
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.sub-header-about h1{
+    font-size: 50px;
+}
 
 
 

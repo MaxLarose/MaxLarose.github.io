@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-blog_seven_bridges_of_konigsberg">
+    <nav>
+        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_seven_bridges_of_konigsberg.html">EN</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">Les Sept Ponts de Königsberg</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="about-me">
+    <div class="row">
+        <div class="about-col">
+            <p>Ce n'est pas tous les jours qu'un nouveau domaine des mathématiques est créé. Cependant, il arrive parfois que l'on rencontre dans la recherche mathématique un problème dont la solution dépasse le cadre du vocabulaire du monde, mathématiquement parlant. Telle était la réalité de notre ami Leonhard Euler lorsqu'il a été informé du problème duquel parlaient les habitants de la ville de Königsberg. Voici l'histoire de la naissance de la théorie des graphes.</p>
+             <p>La ville de Königsberg, structurée comme le montre l'image ci-dessous, avait une géographie unique. Elle contenait sept ponts utilisés pour traverser la rivière Pregel. Les habitants de Königsberg débattaient souvent d'une question liée à la configuration de leur belle ville: "Est-il possible de faire le tour de la ville en passant exactement une fois sur chaque pont ?" Essayez vous-même !</p>
+
+        </div>
+        <div class="blog-konigsberg-img1">
+            <img src="images/7-bridges.jpeg">
+        </div>
+        <div class="about-col">
+            <p>Facile! Il s'agit simplement d'écrire une liste de toutes les trajectoires possibles et nous verrons si l'une d'entre elles satisfait à nos conditions. Non! Tout d'abord, résoudre un problème de cette manière, bien que cela soit possible, ne nous apprendrait rien de nouveau sur ce type de problème. Par exemple, si nous imaginons une ville appelée Maxville avec une géographie tout aussi complexe et 1,729 ponts et que nous voulons prendre une marche en passant sur chaque pont exactement une fois, nous ne pourrons pas appliquer ce que nous avons appris de Königsberg à Maxville parce que nous n'avons rien appris ! On doit trouver une solution théorique, et Leonhard Euler, mathématicien suisse, a été le premier à en trouver une.</p>
+            
+            <p>Voyons le processus de réflexion d'un mathématicien comme Euler (et nous!) On commence par une remarque : Les formes des rives et des îles ne présentent aucun intérêt mathématique pour nous. Elles n'ont aucune importance sur ce problème. Nous pourrions tout aussi bien remplacer ces caractéristiques géographiques par des points. En ce qui concerne les ponts, tout ce qui nous intéresse est ce que nous trouverons à leurs deux extrémités. On peut donc remplacer le dessin ci-dessus par le suivant : </p>
+
+        </div>
+        <div class="blog-konigsberg-img2">
+            <img src="images/bridges.png" style="width: 50%" alt="bridges">
+        </div>
+        <div class="about-col">
+            <p>
+                Admirons la simplicité que l'on vient d'attribuer à ce problème. Cette élimination d'informations inutiles est une stratégie courante en mathématiques. Cette structure s'appelle un <i>graphe</i>. Elle se compose d'un ensemble de <i>sommets</i> (dans notre cas A, B, C et D) et d'<i>arêtes</i> (dans notre cas a, b, c, d, e, f et g.) Le degré d'un sommet est le nombre d'arêtes qui lui sont liées. Par exemple, dans le graphique ci-dessus, le degré de D est 3 et le degré de A est 5.
+            </p>
+            
+            <p>
+                Imaginons une promenade autour de Königsberg au cours de laquelle nous passons sur chaque pont (arête) exactement une fois. Nous pouvons imaginer deux scénarios : D'une part, si notre promenade se termine là où elle a commencé, chaque sommet sera entré le même nombre de fois qu'il a été sorti. Dans ce cas, il est clair que le degré de chaque sommet doit être pair. En revanche, si notre marche a un point de départ différent du point d'arrivée, nous pouvons faire les observations suivantes : Lorsque nous quittons notre point de départ, nous utilisons un pont (une arête). Nous pouvons revenir à notre point de départ, mais comme notre point d'arrivée est différent de notre point de départ, nous devrons le quitter. On constate donc que le degré du point de départ doit être impair. Par le même raisonnement, le degré du point d'arrivée doit être impair également. Quant aux autres points, on doit en sortir autant de fois qu'on y est entré. Cela implique que leurs degrés doivent être pairs.
+            </p>
+            
+            <p>
+                Combinons ces deux raisonnements : Pour qu'il existe une marche dans laquelle nous traversons chaque arête exactement une fois, nous devons avoir soit zéro, soit deux sommets de degré impair. Parfait! Nous avons donc une solution! Appliquons-la au graphe de Königsberg. Ce graphe n'a ni zéro, ni deux, mais quatre sommets de degré impair. Cela signifie qu'il est impossible de trouver une marche qui passe par chaque arête exactement une fois ! Les pauvres habitants de Königsberg devront revisiter quleques ponts.
+            </p>
+            
+            <p>
+                Pendant la Seconde Guerre mondiale, deux des ponts ont été malheureusement détruits lors d'un bombardement. Deux autres ont été enlevés lors de la construction d'une autoroute. Aujourd'hui, il est possible de se promener dans Königsberg (que l'on appelle aujourd'hui Kaliningrad, en Russie) en passant une seule fois sur chacun des ponts!
+            </p>
+
+        </div>
+    </div>
+    
+        
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Designed and built by Maxime Larose</p>
+</section>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+              
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               

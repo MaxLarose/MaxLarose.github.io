@@ -394,9 +394,6 @@ nav .fa{
 }
 
 
-
-
-
 /*---------Synopsis------------*/
 
 .synopsis{
@@ -653,6 +650,8 @@ h2{
 .about-col img{
     width: 100%;
 }
+
+
 
 @media(max-width: 700px){
     .sub-header-about h1{
@@ -1087,7 +1086,7 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 }
 
 html {
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 img {
@@ -1200,20 +1199,12 @@ img {
     }
 }
 
-.card__image--flowers {
-  background-image: url(https://unsplash.it/800/600?image=82);
-}
-
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
-}
-
-.card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
-}
 
 .card__image--bridges {
   background-image: url(images/Konigsberg_bridges.png);
+}
+.card__image--straws {
+  background-image: url(images/straw.jpg);
 }
 
 .card__title {
@@ -1232,12 +1223,39 @@ img {
 }
 
 
+/*----------------------------------------------------------------------Blog Pages--------------------------------------------------------------------*/
+
 
 .sub-header-blog_seven_bridges_of_konigsberg{
     background-attachment: fixed;
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/Konigsberg_bridges.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+
+    
+}
+.sub-header-blog_straw h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header-blog_straw{
+        background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
+        
+    }
+}
+
+.sub-header-blog_straw{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -1251,7 +1269,34 @@ img {
 
 @media(max-width: 700px){
     .sub-header-blog_seven_bridges_of_konigsberg{
-        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Teaching-BG-1-mobile.png);
+        background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/Konigsberg_bridges.png);
+    }
+}
+
+.blog-konigsberg-img1 {
+    text-align: center;
+}
+
+
+.sub-header-blog_straws{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+}
+.sub-header-straws h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media(max-width: 700px){
+    .sub-header-blog_straws{
+        background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/straw.jpg);
     }
 }
 
@@ -1262,14 +1307,48 @@ img {
 
 
 
+@media(max-width: 700px){
+    .blog h1{
+        font-size: 50px;
+        padding-top: 50px
+    }
+}
 
 
 
 
+@media(max-width: 700px){
+    .sub-header-blog h1{
+        font-size: 50px;
+        padding-top: 50px
+    }
+}
 
+.sub-header-blog{
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Blog-BG-1.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header-blog h1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+@media(max-width: 700px){
+    .sub-header-blog{
+        background-image: linear-gradient(rgba(4,9,30,0), rgba(4,9,30,0)),url(images/Blog-BG-1-mobile.png);
+    }
+    .blog
+}
 
-
+.sub-header-about h1{
+    font-size: 50px;
+}
 
 
 

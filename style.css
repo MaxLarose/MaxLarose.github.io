@@ -187,6 +187,8 @@ nav img{
     position: relative;
     cursor: pointer;
     border-radius: 5px;
+    margin-left: 10px;
+    margin-left: 10px;
     
 }
 .hero-btn:hover{
@@ -511,7 +513,7 @@ h2{
         padding: 30px 0px;
     }
     .PIP-col h1{
-        padding-left: 10px
+        padding-left: 10px;
     }
 }
 
@@ -903,17 +905,16 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     
     .PIP-col{
         padding-top: 30px;
-        flex-basis: 48%;
+        flex-basis: 100%;
         text-align: left;
     }
 
     .pip-img{
-        width: 60%;
         height: auto;
         margin-top: 30px;
         align-items: center;
         animation: wipe-enter 1s 0;
-        width: 35%;
+        width: 70%;
     }
 }
 .roll-animation{

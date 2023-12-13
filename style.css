@@ -1218,6 +1218,9 @@ img {
 .card__image--straws {
   background-image: url(images/straw.jpg);
 }
+.card__image--presents {
+  background-image: url(images/christmas_presents.jpg);
+}
 
 .card__title {
     color: @gray-dark;
@@ -1370,6 +1373,9 @@ img {
     font-size: 24px;
 }
 
+.img_presents{
+    background-image: linear-gradient(rgba(4,9,30,0.4), rgba(4,9,30,0.4)),url(images/christmas_presents.jpg);
+}
 
 
 /*--------------------------------------------------z-indices for scroll-over effect------------------------------------------------*/

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQWWBK14L4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GQWWBK14L4');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Max's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="sub-header-blog_seven_bridges_of_konigsberg img_presents">
+    <nav>
+        <a href="index.html" class="To-Home">Maxime<br>Larose</a>
+        <div class="nav-links" id=navLinks>
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>&nbsp; HOME</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp; ABOUT ME</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; CONTACT ME</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-feather"></i>&nbsp; BLOG</a></li>
+                <li><a href="blog_sept_ponts_de_konigsberg.html">FR</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 class="about-title">The Infinitely Many Days of Christmas</h1>
+
+</section>
+
+<!------------------About Me Content--------------------------->
+    
+<section class="teaching">
+    <div class="row-teaching">
+        <div class="teaching-col">
+            <h1>If after "The Twelve Days of Christmas" the presents kept coming, would we end up with -1/12 presents?</h1>
+            <p>Most of us know the song, but for those who don't, let me summarize it in a mathematician's style. "For <i><span class="mathmode">1 ≤ n ≤ 12</span></i>: On the <i><span class="mathmode">n</span></i>th day of Christmas my true love gave to me something (on most days, a bird of some sort)."</p>
+        </div>
+        <div class="blog-konigsberg-img1">
+            <img src="images/partridge.jpg">
+        </div>
+    
+        <div class="teaching-col">
+            <p>Ok now go put all those numbers into your calculator. Just kidding. There's a better way! In elementary school, Karl Friedrich Gauss and his classmated were asked by their teacher to add up all the numbers from 1 to 100. The teacher, surely thinking he had bought himself a few hours, was astounded to find Gauss almost immediately find the answer: 5050! So how did he do this? The number we're looking for is <i><span class="mathmode">1 + 2 + ... + 99 + 100</span></i>. Let's call it <i><span class="mathmode">S</span></i> for "sum". Let's do a bit of mathematical gymnastics. <i><span class="mathmode">S</span></i> might seem hard to calculate, so let's calculate <i><span class="mathmode">2S</span></i> instead. <i><span class="mathmode">2S</span></i> is simply <i><span class="mathmode">(100&nbsp;+&nbsp;99&nbsp;+&nbsp;...&nbsp;+&nbsp;2&nbsp;+&nbsp;1) + (1&nbsp;+&nbsp;2&nbsp;+&nbsp;...&nbsp;+&nbsp;99&nbsp;+&nbsp;100)</span></i> We can rearrange this as <i><span class="mathmode">(1&nbsp;+&nbsp;100) + (2&nbsp;+&nbsp;99) + ... + (99&nbsp;+&nbsp;2) + (100&nbsp;+&nbsp;1)</span></i>. Take a second to convince yourself that this is equal to 50×101, which in turn is eaqual to 5050!</p>
+
+            <p>Upon me was once in my undergraduate years imparted a piece of valuable advice: "be wise, generalize". So let's take what we've learned and make a theorem out of it. Instead of taking the sum of natural numbers from 1 to 100, let's take the sum of natural numbers from 1 to <i><span class="mathmode">n</span></i>. I don't want this post to become a math paper, so I'll give the reader some credit. Let's replace 100 with <i><span class="mathmode">n</span></i> in our above equation and obtain <i><span class="mathmode">1&nbsp;+&nbsp;2&nbsp;+&nbsp;...&nbsp;+&nbsp;n = (n/2)(n&nbsp;+&nbsp;1)</span></i>.</p>
+            
+            <p>I could end this post here, but that would leave out the folly of the following claim: <i><span class="mathmode">1 + 2 + 3 + ... = -1/12</span></i>. This has been claimed by such sources as Numberphile. But I know what you're thinking. This is surely a ridiculous claim. Clearly the sum should be infinite. How could a sum of positive numbers be negative? How could a sum of integers be a non-integer? Your worries are valid. In fact, I agree with you. Let's destroy their reasoning together.</p>
+            
+            <p>The argument starts with the claim that <i><span class="mathmode">1 - 1 + 1 - 1 + 1 - ... = 1/2</span></i>. If your instinct is telling you this looks wrong, you're right! But let's give them the benefit of the doubt and look at the proof. I want you to spot the mistake. Let's call this sum <i><span class="mathmode">X</span></i>. Now let's compute <i><span class="mathmode">1 - X</span></i>. We have</p>
+            
+            <p style="text-align: center"><i><span class="mathmode">1 - X = 1 - (1 + 1 - 1 + 1 - ...)</span></i></p>
+            
+            <p>It follows that</p>
+            
+            <p style="text-align: center"><i><span class="mathmode">1 - X = X</span></i></p>
+            <p>Therefore <i><span class="mathmode">X = 1/2</span></i>. So did you find the mistake? Well here it is: We've been treating <i><span class="mathmode">1 - 1 + 1 - 1 + 1 - ...</span></i> as a real number! We called it <i><span class="mathmode">X</span></i> and assumed we could perform arithmetic on it. We can't.</p>
+
+        </div>
+    </div>
+</section>
+    
+    
+    
+<!--  ----Footer------>
+    
+<section class="footer">
+    <p>Designed and built by Maxime Larose</p>
+</section>
+   
+    
+    
+<!---------------------JavaScript For Toggle Menu------------------------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>    
+    
+    
+<!---------------------------JavaScript for Nav Menu Box Shadow-------------------------             -->
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcons = document.querySelectorAll('.fa');
+
+    menuIcons.forEach(function (icon) {
+        icon.addEventListener('click', function () {
+            // Check if the clicked icon is not the "fa-download" button
+            if (!icon.classList.contains('fa-download')) {
+                // Toggle the 'open' class on the nav-links element
+                navLinks.classList.toggle('open');
+            }
+        });
+    });
+});
+
+</script>
+</body>
+</html>
+                          
+                               
+                               
+                               

@@ -182,7 +182,7 @@ nav img{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 14px;
+    font-size: 22px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -509,11 +509,14 @@ h2{
         flex-basis: 48%;
         padding: 30px 0px;
     }
-    .PIP-col h1{
-        padding-left: 10px;
-    }
 }
 
+.PIP-col h1{
+    padding-left: 10px;
+}
+.PIP-col p{
+    font-size: 22px;
+}
 @media(max-width: 920px){
     .row-index{
         display: block;
@@ -844,7 +847,7 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 14px;
+    font-size: 22px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -1117,6 +1120,19 @@ img {
     display: block;
     width: 100%;
 }
+/*---------------------------------------------Button FontSize Adjustment For Mobile----------------------------------------------------------*/
+@media(max-width: 700px){
+    .blue-btn{
+        font-size: 14px;
+    }
+    .hero-btn{
+        font-size: 14px;
+    }
+    .thesis-btn{
+        font-size: 14px;
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
  
 .cards {
     display: flex;
@@ -1370,7 +1386,7 @@ img {
 }
 
 .teaching-col p{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .img_presents{

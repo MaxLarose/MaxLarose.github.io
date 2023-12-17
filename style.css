@@ -189,13 +189,14 @@ nav img{
     border-radius: 5px;
     margin-left: 10px;
     margin-left: 10px;
-    
 }
 .hero-btn:hover{
-    border: 1px solid #6688cf;
-    background: #6688cf;
+    border: 1px solid rgb(255, 255, 255, 1);
+    background: rgb(29, 60, 100, 0.4);
     transition: 0.25s;
-    color: #000;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
 }
 
 nav .fa{
@@ -698,9 +699,9 @@ h2{
 }
 
 .blue-btn:hover{
-    color: #000;
-    background-color: #6688cf;
-    border-color: #6688cf;
+    color: #fff;
+    background-color: #3866c6;
+    background-color: #3866c6;
 }
 
 

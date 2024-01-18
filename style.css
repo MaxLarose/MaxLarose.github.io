@@ -692,11 +692,11 @@ h2{
     background-color: #1147b5;
     color: #fff;
 }
-@media(max-width:700px){
-    .blue-btn{
-        margin-left: 5px
+
+.blue-btn{
+    margin-left: 0px
 }
-}
+
 
 .blue-btn:hover{
     color: #fff;

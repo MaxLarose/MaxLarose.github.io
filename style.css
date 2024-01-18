@@ -1018,6 +1018,15 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
         text-align: left;
         margin: 5% 5%;
     }
+    
+    .row-about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: left;
+        text-align: left;
+        margin: 5% 5%;
+    }
 }    
 
 .teaching{
@@ -1039,6 +1048,15 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
 
 @media(max-width: 700px){
     .row-teaching{
+        margin-top: 5%;
+        justify-content: space-between;
+        display: block;
+        align-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .row-about{
         margin-top: 5%;
         justify-content: space-between;
         display: block;
@@ -1071,9 +1089,19 @@ box-shadow: inset 7px 7px 12px #e3e3e3,
     }
 }
 
+.row-about{
+    flex-direction: row-reverse;
+}
+@media(max-width: 1400px){
+    .row-about{
+        display: block;
+        flex-direction: row;
+    }
+}
+
 .teaching-table-container{
     display: flex;
-    justify-content: lef;
+    justify-content: left;
     align-items: center;
 }
 
